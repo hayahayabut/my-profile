@@ -390,3 +390,144 @@ footer{
     transition: 0.4s ease;
     transform: scale(1.2)
 }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    nav{
+        width: 90%;
+    }
+
+    #hero-container{
+        width: 90%;
+    }
+
+    #about-container{
+        width: 90%;
+    }
+
+    .about-content{
+        width: 100%;
+    }
+
+    #interests-container{
+        width:90%;
+    }
+
+    #projects-container{
+        width: 90%;
+    }
+
+    .project-card .project-image{
+        height: 250px;
+    }
+
+    .project-card h3{
+        font-size: 1.2rem;
+        justify-content: center;
+    }
+
+    .project-card p{
+        font-size: 0.9rem;
+    }
+
+    footer{
+        width: 90%;
+    }
+
+}
+
+@media (max-width: 480px){
+    nav{
+        width: 95%
+    }
+
+    nav .nav-title{
+        font-size: 1rem;
+    }
+
+    nav .nav-links{
+        font-size: 0.9rem;
+    }
+
+    #hero-container{
+        width: 80%
+    }
+
+    .hero-content{
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-content h2{
+        font-size: 1.6rem;
+        
+
+    }
+
+    .hero-content p{
+        font-size: 0.9rem;
+    }
+
+    #about-container{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        height: max-content;
+    }
+
+    #about-container img{
+        width: 355px;
+    }
+
+    .about-content h2{
+        width: 95%;
+        font-size: 1.5rem;
+        align-self: center;
+    }
+
+    .about-content-text{
+        justify-content: center;
+        align-self: center;
+        font-size: 1rem;
+    }
+
+    .about-content-text p{
+        font-size: 0.9rem;
+    }
+
+    #interests-container{
+        width: 80%;
+        height: fit-content;
+    }
+
+    #projects-container h2,
+    #interests-container h2{
+        width: 90%;
+        font-size: 1.5rem;
+    }
+
+    .interest-content-parent{
+        display: flex;
+        flex-direction: column;
+    }
+    .interest-group h3{
+        font-size: 1.2rem;
+        width: 100%;
+    }
+
+    .interest-list{
+        font-size: 0.9rem;
+        width: 100%;
+    }
+
+    .projects-content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .project-card{
+        width: 100%;
+    }
+}
