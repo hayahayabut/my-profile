@@ -1,107 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-<head> 
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Profile | Hartlyn Yabut</title>
-    <link rel="stylesheet" href="style.css"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <header> 
-        <h1 class="title">Hartlyn Jana A. Yabut</h1>
-        <p class="title-tagline"><i>“I can do all things through Christ who strengthens me”  Philippians 4:13</i></p>
-    </header>
 
-    <main> 
-        
-        <div class="bio">
-            <div class="bio-photo"> 
-                <img src="my-profile-media/bio-photo.jpeg" alt="bio-photo">
-            </div>
-            <div class="bio-content">
-                <h2 >About Me</h2> 
-                    <div class="about-content">
-                        <p> Hi! I am <b>Hartlyn Jana A. Yabut</b>, you can call me <b>Hart</b> for short. <br><br>
-                        I am currently a sophomore in BA Multimedia Studies at UP Open University. </p>
-            
-                        <p> I am optimistic, multi-talented, and eager to learn. 
-                        My greatest quality is that <br> <b>I never give up and have faith that I am where I need to be.</b> </p>
-                    </div>
-       
-         
-                <h2>Things I Love</h2>
-                    <div class="parent-group"> 
-                        <div class="group"> 
-                            <p><b>Food:</b></p>
-                            <ul>
-                                <li>French fries</li>
-                                <li>Carbonara</li>
-                                <li>Mushroom soup</li>
-                            </ul>
-                        </div> 
-                
+    <nav>
+        <a href="scratch.html" class="nav-title">Hartlyn's Profile</a>
+        <div class="nav-links">
+            <a href="#about-container">About</a>
+            <a href="#interests-container">Interests</a>
+            <a href="#projects-container">Projects</a>
+        </div>
+    </nav>
 
-                        <div class="group"> 
-                            <p><b>Interests:</b></p>
-                            <ul>
-                                <li>Web design or UX/UI</li>
-                                <li>Graphic design</li>
-                                <li>Data organization</li>
-                            </ul>
-                        </div>
-            
-                        <div class="group"> 
-                            <p><b>Leisure:</b></p>
-                            <ul>
-                                <li>Films <i>(Thriller, Horror, Crime, Mystery, & Animation)</i></li>
-                                <li>Volleyball</li>
-                                <li>Creation or Innovation</li>
-                            </ul>
-                        </div>
-                    </div>
+    <main>
+        <div id="hero-container">
+            <img src="my-profile-media/bio-photo.jpeg" alt="Hero Image">
+            <div class="hero-content">
+                <h2>Hartlyn Jana A. Yabut</h2>
+                <p>“I can do all things through Christ who strengthens me”  Philippians 4:13</p>
             </div>
         </div>
 
-        <hr>
-        <h2 class="project-title">Passion Projects</h2>
-        <div class="gallery-container">
-            <div class="gallery">
-                <img src="my-profile-media/passion-project-1.jpg" 
-                alt="A reimagined illustration of the serpent tempting eve under moonlit water" 
-                height="300">
-                <h3>Reimagined Genesis</h3>
-                <p>A digital art I created for an online art contest via Instagram depicting a reimagined famous verse in Genesis wherein the serpent tempted Eve</p>
-                <p class="date">Aug 11, 2025</p>
-
+        <div id="about-container">
+            <img src="my-profile-media/bio-photo.jpeg" alt="Bio Photo">
+            <div class="about-content">
+                <h2>About Me</h2>
+                <div class="about-content-text"> 
+                    <p> Hi! I am <b>Hartlyn Jana A. Yabut</b>, you can call me <b>Hart</b> for short.</p>
+                    <p> I am currently a sophomore in BA Multimedia Studies at UP Open University. </p>
+                    <p> I am optimistic, multi-talented, and eager to learn. My greatest quality is that <b>I never give up and have faith that I am where I need to be.</b></p>
+                </div>
             </div>
+        </div>
 
-            <div class="gallery">
-                <iframe src="https://www.youtube.com/embed/Z6HF2ZopBUE?si=c4Qgp-9B4d0KqyvI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <h3>Animation Test</h3>
-                <p>A rough animation I created for my personal comic/story project, as well as to try animation altogether</p>
-                <p class="date">Jul 19, 2022</p>
+        <div id="interests-container">
+            <h2>Things I Love</h2>
 
+            <div class="interest-content-parent">
+                <div class="interest-group">
+                    <h3>Food</h3>
+                    <ul class="interest-list">
+                        <li>French fries</li>
+                        <li>Carbonara</li>
+                        <li>Mushroom soup</li>
+                    </ul>
+                </div>
+
+                <div class="interest-group">
+                    <h3>Interests</h3>
+                    <ul class="interest-list">
+                        <li>Web design or UX/UI</li>
+                        <li>Graphic design</li>
+                        <li>Data organization</li>
+                    </ul>
+                </div>
+
+                <div class="interest-group">
+                    <h3>Leisure</h3>
+                    <ul class="interest-list">
+                        <li>Films <i>(Thriller, Horror, Crime, Mystery, & Animation)</i></li>
+                        <li>Volleyball</li>
+                        <li>Creation or Innovation</li>
+                    </ul>
+                </div>
             </div>
+        </div>
 
-            <div class="gallery">
-                <img src="my-profile-media/passion-project-2.jfif" 
-                alt="A reimagined illustration of the serpent tempting eve under moonlit water" 
-                height="300">
-                <h3>Recycled Costume: Indian Wedding Dress</h3>
-                <p>Two recycled costumes I designed and created for my school's United Nations recycled costume contest for the male and female category</p>
-                <p class="date">Oct 5, 2023</p>
+            <div id="projects-container">
+                <h2>Passion Projects</h2>
+
+                <div class="projects-content">
+                    <div class="project-card">
+                        <img src="my-profile-media/passion-project-1.jpg" 
+                        alt="A reimagined illustration of the serpent tempting eve under moonlit water"
+                        class="project-image">
+                        <h3>Reimagined Genesis</h3>
+                        <p>A digital art I created for an online art contest via Instagram depicting a reimagined famous verse in Genesis wherein the serpent tempted Eve</p>
+                        <p class="project-date">Aug 11, 2025</p>
+                    </div>
+
+                    <div class="project-card">
+                        <iframe src="https://www.youtube.com/embed/Z6HF2ZopBUE?si=c4Qgp-9B4d0KqyvI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen 
+                        alt="Short Personal Animatic"
+                        class="project-image"></iframe> 
+                        <h3>Animation Test</h3>
+                        <p>A rough animation I created for my personal comic/story project, as well as to try animation altogether</p>
+                        <p class="project-date">Jul 19, 2022</p>
+                    </div>
+
+                    <div class="project-card">
+                        <img src="my-profile-media/passion-project-2.jfif" 
+                        alt="A reimagined illustration of the serpent tempting eve under moonlit water"
+                        class="project-image">
+                        <h3>Indian Recycled Costume</h3>
+                        <p>Two recycled costumes I designed and created for my school's United Nations recycled costume contest for the male and female category</p>
+                        <p class="project-date">Oct 5, 2023</p>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
 
     <footer>
-            <p class="footer-container">
-                <a href="https://mail.google.com/mail/u/0/?fs=1&to=hayabut@up.edu.ph&tf=cm" target="_blank" rel="noopener noreferrer" class="footer-link"> UP Mail</a>
-                <a href="https://www.facebook.com/hartlyn.yabut.5" target="_blank" rel="noopener noreferrer" class="footer-link"> Facebook</a>
-            </p>
+        <p class="footer-copyright">Copyright @ 2026 Hartlyn Yabut</p>
+        <div class="footer-links">
+            <a href="https://mail.google.com/mail/u/0/?fs=1&to=hayabut@up.edu.ph&tf=cm" target="_blank" rel="noopener noreferrer" class="footer-link"><img src="email-icon.png"></a>
+            <a href="https://www.facebook.com/hartlyn.yabut.5" target="_blank" rel="noopener noreferrer" class="footer-link"><img src="fb-icon.png"></a>
+        </div>
     </footer>
 </body>
 </html>
