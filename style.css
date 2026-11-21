@@ -5,12 +5,12 @@
 }
 
 :root{
-    --light-color-1: #ffffff;
-    --light-color-2:#ffedbc;
-    --light-color-3: #ffd153;
-    --primary-color: #c6831e;
-    --dark-color-1: #291700;
-    --dark-color-2: #160b00;
+    --light-color-1: #FFFFEB;
+    --light-color-2:#FFEDBC;
+    --light-color-3: #FFD153;
+    --primary-color: #A2660B;
+    --dark-color-1: #663300;
+    --dark-color-2: #160B00;
 
     --font-header: "Bricolage Grotesque", Verdana, sans-serif;
     --font-body: 'Nourd', Cambria, serif;
@@ -25,6 +25,10 @@
 a{
     text-decoration: none;
     color: var(--dark-color);
+}
+
+b{
+    color: var(--dark-color-2)
 }
 
 body{
@@ -64,6 +68,8 @@ nav .nav-title:hover{
     transition: 0.4s ease;
     transform: scale(1.02);
     margin-left: 5px;
+    background-color: var(--dark-color-2);
+    color: var(--light-color-2);
 }
 
 nav .nav-links{
@@ -75,11 +81,13 @@ nav .nav-links{
     font-family: var(--font-body);
     font-size: 1.2rem;
     font-weight: 600;  
+    color: var(--dark-color-1)
 }
 
 nav .nav-links a:hover{
     transition: 0.4s ease;
-    color: var(--primary-color)
+    color: var(--primary-color);
+    transform: scale(1.04)
 }
 
 main {
@@ -96,6 +104,7 @@ main {
     justify-self: center;
     background-color: var(--light-color-2);
     border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 }
 
 #hero-container img{
@@ -103,6 +112,7 @@ main {
     width: auto;
     height: 400px;
     object-fit: cover;
+    object-position: top;
     border-radius: 30px;
 }
 
@@ -117,7 +127,8 @@ main {
     border-radius: 20px;
     width: 96%;
     margin-bottom: 20px;
-    color: var(--dark-color-2);
+    color: var(--dark-color-1);
+    cursor:default;
 }
 
 .hero-content h2{
@@ -132,6 +143,7 @@ main {
     font-weight: 500;
     text-align: center;
     line-height: 1.5;
+    color: var(--dark-color-2);
 }
 
 #about-container{
@@ -142,12 +154,12 @@ main {
     background-color: var(--light-color-2);
     border-radius: 20px;
     margin-top: 20px;
-    padding-right: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 }
 
 #about-container img{
-    width: 700px;
-    height: 300px;
+    width: 40%;
+    height: 20rem;
     object-fit: cover;
     border-radius: 30px;
     text-align: center;
@@ -161,9 +173,9 @@ main {
     align-self: center;
     align-items: start;
     border-radius: 20px;
-    width: auto;
-    height: 263px;
-    margin-right: 10px;
+    width: fit-content;
+    height: 100%;
+    margin-right: 20px;
     color: var(--dark-color-2);
 }
 
@@ -171,12 +183,13 @@ main {
     font-family: var(--font-header);
     font-size: 2rem;
     font-weight: 700;
+    color: var(--dark-color-1);
     background-color: var(--light-color-3);
     border-radius: 30px;
-    padding: 10px 30px;
+    padding: 0.7rem;
     margin-top: 5px;
     margin-bottom: 20px;
-    width: 500px;
+    width: 100%;
     text-align: center;
 }
 
@@ -184,42 +197,43 @@ main {
     display: flex;
     flex-direction: column;
     align-self: center;
-    align-items: start;
+    justify-content: center;
     border-radius: 20px;
+    border: var(--primary-color) dashed 3px;
     width: 100%;
-    height: 300px;
+    height: 100%;
+    padding: 1rem 2rem;
     color: var(--dark-color-2);
-    background-color: var(--primary-color);
-    padding: 0px 20px;
 }
 
 .about-content p{
     font-family: var(--font-body);
-    color: var(--light-color-1);
-    font-size: 1rem;
+    color: var(--dark-color-2);
+    font-size: 1.1rem;
     font-weight: 500;
-    text-align: left;
+    text-align: center;
     line-height: 1.5;
-    margin-top: 10px;
+    padding-bottom: 0.6rem;
 }
 
 #interests-container{
     display: flex;
     flex-direction: column;
     width: 70%;
-    height: 305px;
+    height: max-content;
     justify-self: center;
     background-color: var(--light-color-2);
     border-radius: 20px;
     margin-top: 20px;
     padding: 0px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 }
 
-#projects-container h2,
 #interests-container h2{
     font-family: var(--font-header);
     font-size: 2rem;
     font-weight: 700;
+    color: var(--dark-color-1);
     background-color: var(--light-color-3);
     border-radius: 30px;
     padding: 10px 30px;
@@ -238,7 +252,7 @@ main {
     justify-content: space-between;
     border-radius: 20px;
     width: 95%;
-    height: 300px;
+    height: max-content;
     color: var(--dark-color-2);
     margin-bottom: 20px;
 }
@@ -271,13 +285,13 @@ main {
 }
 
 .interest-list{
-    background-color: var(--primary-color);
     border-radius: 20px;
-    padding: 15px 20px 10px 40px;
+    border:var(--primary-color) dashed 3px;
+    padding: 15px 20px 15px 40px;
     width: 100%;
-    height: 130px;
+    height: 8rem;
     font-family: var(--font-body);
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 
 #projects-container{
@@ -289,6 +303,22 @@ main {
     border-radius: 20px;
     margin-top: 20px;
     padding: 0px;
+}
+
+#projects-container h2{
+    font-family: var(--font-header);
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--dark-color-1);
+    background-color: var(--light-color-3);
+    border-radius: 30px;
+    padding: 10px 30px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    width: 500px;
+    text-align: center;
+    align-self: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 }
 
 .projects-content{
@@ -305,9 +335,17 @@ main {
     flex-direction: column;
     width: 32%;
     justify-content: space-between;
-    align-items: center;
+    text-align: center;
     background-color: var(--light-color-2);
     border-radius: 20px;
+    border: var(--primary-color) dotted 3px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+
+.project-card:hover{
+    transition: 0.4s ease;
+    transform: scale(1.02);
 }
 
 .project-card .project-image{
@@ -322,13 +360,13 @@ main {
     font-family: var(--font-header);
     font-size: 1.2rem;
     color: var(--dark-color-2);
-    justify-self: center;
     margin-bottom: 10px;
+    padding: 0 1rem;
 }
 
 .project-card p{
     font-family: var(--font-body);
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: var(--dark-color-1);
     justify-self: center;
     text-align: center;
@@ -391,7 +429,7 @@ footer{
     transform: scale(1.2)
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 749px) and (max-width: 1024px) {
     nav{
         width: 90%;
     }
@@ -401,15 +439,29 @@ footer{
     }
 
     #about-container{
+        display: flex;
         width: 90%;
+    }
+
+    #about-container img{
+        flex-shrink: 2;
     }
 
     .about-content{
         width: 100%;
+        flex-grow: 2;
+    }
+
+    .about-content-text p{
+        font-size: 0.9rem;
     }
 
     #interests-container{
         width:90%;
+    }
+
+    .interest-list{
+        height: 11rem;
     }
 
     #projects-container{
@@ -433,6 +485,145 @@ footer{
         width: 90%;
     }
 
+}
+
+@media (min-width: 481px) and (max-width: 748px){
+    nav{
+        width: 95%
+    }
+
+    nav .nav-title{
+        font-size: 1rem;
+    }
+
+    nav .nav-links{
+        font-size: 1rem;
+    }
+
+    #hero-container{
+        width: 90%
+    }
+
+    .hero-content{
+        width: 95%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-content h2{
+        font-size: 1.6rem;
+        
+
+    }
+
+    .hero-content p{
+        font-size: 0.9rem;
+    }
+
+    #about-container{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        height: max-content;
+    }
+
+    #about-container img{
+        width: 100%;
+        height: 30rem;
+        margin-bottom: -10px;
+    }
+
+    .about-content{
+        margin:0;
+        padding:1rem 1rem;
+
+    }
+
+    .about-content h2{
+        width: 95%;
+        font-size: 1.5rem;
+        align-self: center;
+    }
+
+    .about-content-text{
+        justify-content: center;
+        align-self: center;
+        font-size: 1rem;
+    }
+
+    .about-content-text p{
+        font-size: 0.9rem;
+    }
+
+    #interests-container{
+        width: 90%;
+        height: fit-content;
+    }
+
+    #projects-container h2,
+    #interests-container h2{
+        width: 90%;
+        font-size: 1.5rem;
+    }
+
+    .interest-content-parent{
+        display: flex;
+        flex-direction: column;
+        height:max-content;
+        padding: 0;
+    }
+
+    .interest-group{
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .interest-group h3{
+        font-size: 1.2rem;
+        width: 100%;
+    }
+
+    .interest-list{
+        font-size: 0.9rem;
+        width: 100%;
+        height: max-content;
+    }
+
+    #projects-container{
+        width: 90%;
+        padding: 0;
+    }
+
+    .projects-content{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+        padding: 0;
+    }
+
+    .project-card{
+        width: 100%;
+    }
+
+    .project-card .project-image{
+        height: 20rem;
+    }
+
+    .project-card h3{
+        font-size: 1.4rem;
+        margin-top: 0.4rem;
+    }
+
+    footer{
+        width: 95%;
+    }
+
+    .footer-links{
+        width: max-content;
+    }
 }
 
 @media (max-width: 480px){
@@ -475,14 +666,22 @@ footer{
         align-items: center;
         width: 80%;
         height: max-content;
+        padding: 0;
+        margin: 0;
     }
 
     #about-container img{
-        width: 355px;
+        width: 100%;
+        justify-self: center;
+    }
+
+    .about-content{
+        padding: 0;
+        margin: 0;
     }
 
     .about-content h2{
-        width: 95%;
+        width: 90%;
         font-size: 1.5rem;
         align-self: center;
     }
@@ -491,6 +690,8 @@ footer{
         justify-content: center;
         align-self: center;
         font-size: 1rem;
+        width: 90%;
+        margin-bottom: 1rem;
     }
 
     .about-content-text p{
@@ -499,27 +700,46 @@ footer{
 
     #interests-container{
         width: 80%;
-        height: fit-content;
+        height: max-content;
     }
 
-    #projects-container h2,
     #interests-container h2{
         width: 90%;
         font-size: 1.5rem;
+        margin-bottom: 0rem;
     }
 
     .interest-content-parent{
         display: flex;
         flex-direction: column;
+        width: 100%;
+        padding: 0 1rem;
     }
+
+    .interest-group{
+        width: 100%;
+    }
+
     .interest-group h3{
         font-size: 1.2rem;
         width: 100%;
+        margin-top: 1.2rem;
     }
 
     .interest-list{
         font-size: 0.9rem;
         width: 100%;
+        height: max-content;
+        margin: 0;
+    }
+
+    #projects-container{
+        width:90%;
+    }
+
+    #projects-container h2{
+        width: 90%;
+        font-size: 1.5rem;
     }
 
     .projects-content{
@@ -529,5 +749,18 @@ footer{
 
     .project-card{
         width: 100%;
+    }
+
+    footer{
+        width: 90%;
+        padding: 0.3rem;
+    }
+
+    .footer-copyright{
+        font-size: 0.9rem;
+    }
+
+    .footer-links{
+        width: max-content;
     }
 }
